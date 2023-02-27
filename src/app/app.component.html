@@ -1,0 +1,7 @@
+<ejs-grid #grid [dataSource]="daataSource" [allowPaging]="true" [pageSettings]="pageSettings" [allowSorting]="true"
+  (rowSelected)="onRowSelected($event)">
+  <e-columns>
+    <e-column field="name" headerText="Name" [isPrimaryKey]="true" [width]="150" [allowSorting]="true"></e-column>
+    <e-column field="duplicates" headerText="Duplicates" [width]="150" [allowSorting]="true"></e-column>
+  </e-columns>
+</ejs-grid>
